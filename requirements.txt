@@ -1,0 +1,16 @@
+#Tools Used
+
+1. AMASS:
+https://github.com/OWASP/Amass
+
+2. sublist3r:
+https://github.com/aboul3la/Sublist3r
+
+3. assetfinder
+https://github.com/tomnomnom/assetfinder
+
+4. subfinder
+https://github.com/projectdiscovery/subfinder
+
+5. altdns
+https://github.com/infosec-au/altdns
