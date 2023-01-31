@@ -19,7 +19,7 @@ mkdir -p $domain-enumeration
 amass enum -d $domain -o $domain-enumeration/amass_results.txt
 
 # Run Sublister
-#sublist3r -d $domain -o $domain-enumeration/sublister_results.txt
+sublist3r -d $domain -o $domain-enumeration/sublister_results.txt
 
 # Run Assetfinder
 assetfinder $domain >> $domain-enumeration/assetfinder_results.txt
@@ -28,7 +28,7 @@ assetfinder $domain >> $domain-enumeration/assetfinder_results.txt
 subfinder -d $domain -o $domain-enumeration/subfinder_results.txt
 
 # Run Altdns
-#altdns -i $domain-enumeration/amass_results.txt -o $domain-enumeration/altdns_results -r -s $domain-enumeration/altdns_results.txt
+altdns -i $domain-enumeration/amass_results.txt -o $domain-enumeration/altdns_results -r -s $domain-enumeration/altdns_results.txt
 
 # Combine all the results into a single file
 cat $domain-enumeration/*_results.txt | sort -u > $domain-enumeration/combined_results.txt
